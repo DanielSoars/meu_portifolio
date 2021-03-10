@@ -16,22 +16,8 @@
     --font-secundaria: "Josefin Slab", serif;
     --font-acao: "Mulish", serif;
 }
-.iconemenu {   
-    position: fixed;
-    z-index: 100;
-    right: 2rem;
-    top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    cursor: pointer;
-}
-.linha{
-    width: 100%;
-    height: .1rem;
-    background-color: #ffffff;
-    box-shadow: 0.1rem 0.1rem 1px #000000;
-}
+
+
 header{
     width: 100%;
     height: vh;
@@ -42,9 +28,7 @@ header{
 .imgsite{
     background-color: rgba(0, 0, 0.9);
     width: 100%;
-    height: 100%;
-   
-
+    height: 100%;  
 }
 /*animação de entrada*/
 @keyframes zoom{
@@ -121,6 +105,43 @@ header{
     background: -webkit-linear-gradient(to right, #434343, #000000); 
     background: linear-gradient(to right, #434343, #000000);  
 }
+.iconemenu{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    transition: 1.9s;
+}
+
+.show-menu .iconemenu{
+    right: 16rem;
+}
+.line{
+    width: 80%;
+    height: .2rem;
+    background-color:#ffffff;
+    box-shadow: 0rem 0.1rem 1px rgba(0, 0, 0,0.8);
+    transition: transform 1s;
+}
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+}
+.show-menu #line1{
+    transform:rotate(45deg) translate(.59rem, .5rem) ;
+}
+.show-menu #line3{
+    transform:rotate(-45deg) translate(.59rem, -.5rem) ;
+}
+
 .menulateral{
     width: 20rem;
     height: 100vh;
@@ -128,9 +149,9 @@ header{
     position: fixed;
     top: 0;
     right: -20rem;
-    
+    transition: all 2s ;    
 }
-.menulateral.show-menu{
+.show-menu .menulateral{
     right: 0;
 }
 .menu{
@@ -174,20 +195,4 @@ header{
 }
 .social-midia i:hover{
     color: #4286f4;
-}
-.iconemenu i{
-    background-color:#555555;
-    border-radius: 50%;
-    color: #ffffff;
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 1s;
-}
-.iconemenu i:hover{
-    color: #555555;
-    background-color: #55555500;
 }
