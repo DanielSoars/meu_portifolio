@@ -127,6 +127,10 @@ header{
     background-color: #ffffff;
     position: fixed;
     top: 0;
+    right: -20rem;
+    
+}
+.menulateral.show-menu{
     right: 0;
 }
 .menu{
@@ -149,4 +153,41 @@ header{
 .menu-link:hover{  
     color: #4286f4;
 
+}
+.social-midia{
+    
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-midia i{  
+    
+    color: #555555;  
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 1s;
+    
+}
+.social-midia i:hover{
+    color: #4286f4;
+}
+.iconemenu i{
+    background-color:#555555;
+    border-radius: 50%;
+    color: #ffffff;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s;
+}
+.iconemenu i:hover{
+    color: #555555;
+    background-color: #55555500;
 }
