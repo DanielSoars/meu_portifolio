@@ -3,7 +3,7 @@ Portifolio do desenvolvedor
 
 ## ícones
 
-* :packge: nova funcionalidade
+* :package: nova funcionalidade
 * :up: atualização
 * :beetle: correção de bug
 * :checkered_flag: release
